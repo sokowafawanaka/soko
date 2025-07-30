@@ -1,0 +1,48 @@
+p{
+    font-family:Arial;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 1px 1px 0 #666666;
+}
+h3{
+    color:lightgreen;
+}
+label{
+    color:orange;
+    text-decoration: dotted;
+}
+text{
+    color:blue;
+}
+*{
+    color:red;
+}
+.invisible{
+    display:none;
+}
+input:invalid{
+    border:2px solid rgb(0, 255, 64);
+}
+input:invalid+div{
+    display:block;
+}
+input:focus + div{
+    display:none;
+}
+a.movableItem{
+    cursor:move;
+}
+li{
+    display: inline;
+    margin-right:10px;
+}
+li.coming-soon{
+    visibility: hidden;
+}
+h3{
+    float:left
+}

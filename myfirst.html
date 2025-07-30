@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset=" utf-8">
+    <titlte> Hello world site </titlte>
+    </head>
+    <body>
+Hello world
+<table>
+    <tr>
+        <th> Monday</th>
+        <td> tuesday</td>
+        <td>wednesday</td>
+    </tr>
+    <tr>
+        <td>1pm-2pm</td>
+        <td rowspan="2">Intro physics</td>
+        <td>calculus 2</td>
+        <td>free</td>
+    </tr>
+    <tr>
+        <th>2pm-3pm</th>
+        <td>free</td>
+        <td>pyschology</td>
+    </tr>
+    </table>
+    <h3>Controls</h3>
+    <p> Text input:<input type="text" maxlength="5"></p>
+    <p> Password input :<input type="password"></p>
+    <p>search input:<input type ="search"></p>
+    <p>text area: <textarea> initial text</textarea></p>
+    <p> 
+        Checkbox:
+        <input type="checkbox" checked="checked"/>checked
+        <input type="checkbox"/>unchecked
+    </p>
+    <p> Drop down list box:
+        <select>
+            <option> OPtion1</option>
+            <option selected="selected">Option2</option>
+        </select>
+    </p>
+    <p>Multiple Select Box:
+        <select Multiple="Multiple">
+            <option>Option1</option>
+            <option selected"selected">Option2</option>
+
+        </select>
+    </p>
+    <p> file input box:<input type="file"/>
+        <p> image button:<input type="image" src="http://cs.gmu.edu/~tlatoza/images/reachabilityQuestion.jpg" class="large transparent" width="50"></p>
+<p>Buton:<button>BUtton</button></p>
+<p>range input:<input type="range" min="0" max="100" step="10" value="30"/></p>
+<h3><strong>Speacialized Controls</strong></h3>
+<input type="date"/><input type="time"/> <input type="datetime-local"/>  
+<input type="color"/> <input type="number" min="0" max="50"/>
+<h3>labelling input</h3>
+<p>Input box:<input type="text" placeholder="Enter Keyword"/></p>
+<p>label on input box:<input type="text"/></label></p>
+<h3>Validating input</h3>
+<p>Displays errors on invalid input immediately,making it easier to fix errors</p>
+<p><label>Email:<input type="email"/>
+<div class="invisible">Please enter valid email.</div>
+</label></p>
+<p><label>Url:<input type="url"/></label></p>
+<p><label>Would you like an orange or an apple?<input type="text" pattern="orange|apple"/></label></p>
+<p><label>Enter username upto 10 characters:<input type="text" maxlength="10"/></label></p>
+<p><label>Autogenarated text <input type="text" readonly="true"/></label></p>
+<a class="movableItem">Walt Whitman</a>
+<ul>
+    <li>Home</li>
+    <li>Products</li>
+    <li class="coming-soon">Services</li>
+    <li>about</li>
+    <li>Contact</li>
+</ul>
+    </body>
+</html>
