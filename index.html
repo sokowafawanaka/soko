@@ -2,17 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Use official Font Awesome CDN for best compatibility -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="bootstrap.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiunze Langton</title>
+    <title>Document</title>
     <style>
         img {
             width: 20vw;
             border-radius: 10px;
-            border: 2px solid blue;
+            border: 2px solid white;
         }
 
         ul {
@@ -35,70 +34,76 @@
             transition: 0.5s;
         }
 
-        @media (max-width: 767.98px) {
-            #navbarMenu {
-                position: fixed;
-                top: 56px;
-                right: 0;
-                left: auto;
-                width: 200px;
-                height: 100%;
-                background: white;
-                box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-                z-index: 1050;
-                padding-top: 1rem;
-            }
-
-            #navbarMenu .navbar-nav {
-                flex-direction: column !important;
-            }
+       
+    
+    @media (max-width: 767.98px) {
+        #navbarMenu {
+            position: fixed;
+            top: 56px;
+            right: 0;
+            left: auto;
+            width: 200px;
+            height: auto;
+            max-height: 300px;
+            background: white;
+            box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+            z-index: 1050;
+            padding-top: 1rem;
+            overflow-y: auto;
         }
+
+        #navbarMenu .navbar-nav {
+            flex-direction: column !important;
+        }
+    }
+
+
+        
     </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-white fixed-top">
-            <div class="container-fluid">
-                <h1>Langton <span class="text-success">Chiunze</span></h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ms-auto flex-column flex-md-row ">
-
-                        <li class="nav-item mx-2">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#projects" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="container-fluid">
+        <h1>Langton <span class="text-success">Chiunze</span></h1>
+        <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"
+            style="width: 32px; height: 32px;">
+            <span class="navbar-toggler-icon" style="width: 24px; height: 24px;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto flex-column flex-md-row ">
+                <li class="nav-item mx-2">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     </header>
     <main>
         <div class="container-fluid mt-5">
             <div class="row bg-dark">
-                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-                    <figure>
-                        <img src="chiunze.jpg" alt="Langton Chiunze" class="img-fluid mt-5 mb-3 mx-auto d-block">
-                    </figure>
-                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+    <figure class="w-100 d-flex justify-content-center align-items-center">
+        <img src="chiunze.jpg" alt="Langton Chiunze" class="img-fluid mt-5 mb-3 mx-auto d-block">
+    </figure>
+</div>
             </div>
             <div class="row bg-white">
                 <div class="col-md-6 col-sm-12 text-center">
                     <h2 class="text-center mt-5">About</h2>
                     <p class="lead">A young innovative <em>Bsc</em> Computer Science student at Midlands State
                         University.</p>
-                    <p class="lead">I am a student with passion in the growing technology,not just learning but also
-                        using my skills to solve real problems.</p>
-                    <p class="lead">I am a growing full stack developer who loves building <span
+                    <p class="lead">I am a student with passion in the evolving technology.</p>
+                    <p class="lead">A growing full stack developer who loves building <span
                             class="text-success">interactive</span> web applications.</p>
                 </div>
                 <div class="col-md-6 col-sm-12 lead" id="about">
@@ -159,6 +164,4 @@
     <script src="bootstrap.js"></script>
 </body>
 
-
 </html>
-
