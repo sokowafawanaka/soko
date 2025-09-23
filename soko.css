@@ -1,0 +1,90 @@
+
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    img {
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+    ul {
+      list-style-type: none;
+    }
+    a:link {
+      text-decoration: none;
+      display: block;
+      color: black;
+      font-weight: bold;
+    }
+    a:hover {
+      color: darkgreen;
+      transition: 0.5s;
+    }
+    a:active {
+      color: red;
+    }
+    .first-section {
+      border: 1px solid white;
+      background-color: whitesmoke;
+      border-radius: 10px;
+    }
+    .fa-brands,
+    .fa-solid {
+      font-size: 24px;
+      margin: 0 8px;
+      color: #333;
+    }
+    .pro {
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 5px;
+      background-color: whitesmoke;
+      max-width: 300px;
+      margin: 10px auto;
+    }
+    .con {
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 5px 10px;
+      background-color: whitesmoke;
+      display: inline-block;
+      margin: 10px auto;
+      text-decoration: none;
+      color: black;
+      max-width: 300px;
+    }
+    .navbar .collapse .navbar-nav .nav-link:hover {
+      background-color: rgba(0, 50, 50, 1);
+      transition: 0.5s;
+      color: white !important;
+    }
+    .navbar .collapse .navbar-nav .nav-link:active{
+        background-color: white;
+        color:rgba(0, 50, 50, 1) !important;
+    }
+    
+    @media (max-width: 767.98px) {
+      #navbarMenu {
+        position: fixed;
+        top: 56px;
+        right: 0;
+        left: auto;
+        width: 200px;
+        height: auto;
+        max-height: 300px;
+        background: white;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+        z-index: 1050;
+        padding-top: 1rem;
+        overflow-y: auto;
+      }
+      #navbarMenu .navbar-nav {
+        flex-direction: column !important;
+      }
+    }
+   
+  
