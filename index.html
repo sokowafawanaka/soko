@@ -2,216 +2,137 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Langton Chiunze - Computer Science student portfolio showcasing skills, projects, and contact information.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="soko.css">
     <title>Langton Chiunze</title>
-    <style>
-        img {
 
-            border-radius: 10px;
-            border: 2px solid white;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        a:link {
-            text-decoration: none;
-            display: block;
-            color: black;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: darkgreen;
-            transition: 0.5s;
-        }
-
-        a:active {
-            color: red;
-        }
-
-        @media (max-width: 767.98px) {
-            #navbarMenu {
-                position: fixed;
-                top: 56px;
-                right: 0;
-                left: auto;
-                width: 200px;
-                height: auto;
-                max-height: 300px;
-                background: white;
-                box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-                z-index: 1050;
-                padding-top: 1rem;
-                overflow-y: auto;
-            }
-
-            #navbarMenu .navbar-nav {
-                flex-direction: column !important;
-            }
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        .first-section {
-            border: 1px solid white;
-            background-color: whitesmoke;
-            border-radius: 10px;
-        }
-
-        .fa-brands,
-        .fa-solid {
-            font-size: 24px;
-            margin: 0 8px;
-            color: #333;
-        }
-
-        .pro {
-            border: 1px solid white;
-            border-radius: 10px;
-            padding: 5px;
-            background-color: whitesmoke;
-            max-width: 300px;
-            margin: 10px auto;
-        }
-    </style>
 </head>
 
 <body>
+    <!--My Navigation-->
     <header>
         <nav class="navbar navbar-expand-md bg-white fixed-top">
             <div class="container-fluid">
-                <p class="fs-1">Langton <span class="text-success">Chiunze</span></p>
-                <button class="navbar-toggler p-1 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                <p class="fs-1 m-0">Langton <span class="text-success">Chiunze</span></p>
+                <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
                     aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"
                     style="width: 32px; height: 32px;">
                     <span class="navbar-toggler-icon" style="width: 24px; height: 24px;"></span>
                 </button>
+                <!-- nav links -->
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-auto flex-column flex-md-row align-items-center fs-5">
-                        <li class="nav-item mx-2">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#projects" class="nav-link">Projects</a>
-                        </li>
+                        <li class="nav-item mx-2"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item mx-2"><a href="#projects" class="nav-link">Projects</a></li>
                         <li class="nav-item mx-2"><a href="#skills" class="nav-link">Skills</a></li>
-                        <li class="nav-item mx-2">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
+                        <li class="nav-item mx-2"><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
+        <!-- my picture and name -->
         <div class="container-fluid mt-5 pt-5">
-            <div class="row bg-dark min-vh-50 justify-content-center align-items-center">
+            <div class="row bg-dark min-vh-50 justify-content-center align-items-center py-5">
                 <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                     <figure class="w-100 d-flex justify-content-center align-items-center">
-                        <img src="chiunze.jpg" alt="Langton Chiunze" class="img-fluid mt-3 d-block">
+                        <img src="chiunze.jpg" alt="Langton Chiunze" class="img-fluid mt-3 d-block" loading="lazy">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="text-white text-center fs-1 mb-2">Langton Chiunze</h1>
-                    <p class="text-white text-center fs-6 mb-2 lead">Computer Science student</p>
+                <div
+                    class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center text-white">
+                    <h1 class="text-center fs-1 mb-2">Langton Chiunze</h1>
+                    <p class="text-center fs-6 mb-2 lead">Computer Science Student</p>
                 </div>
             </div>
-            <section class=" mt-3 mx-2 first-section">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 text-center" id="about">
 
-                        <h2 class="text-center mt-5">About</h2>
-                        <p class="lead">A young innovative <abbr title="Bachelor of Science">BSc</abbr> Computer Science
-                            student
-                            at Midlands State
-                            University.</p>
-                        <p class="lead">I am a student with passion in the evolving technology.</p>
-                        <p class="lead">A growing full stack developer who loves building <span
-                                class="text-success">interactive</span> web applications.</p>
+            <!-- About -->
+            <section class="mt-5 mx-2 first-section py-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 text-center mb-4" id="about">
+                        <h2 class="mt-3">About</h2>
+                        <p class="lead"><abbr title="Bachelor of Science">BSc</abbr> Computer Science student at
+                            Midlands State University.</p>
+                        <p class="lead">My passion as a <em>Computer Scientist </em>lies in the growing tech industry,
+                            where I focus on web development, problem-solving, and building <span
+                                class="text-success">interactive</span> digital experiences.</p>
 
                     </div>
+                    <!-- my skills as a softtware developer with icons-->
                     <div class="col-md-6 col-sm-12 text-center" id="skills">
-
-                        <h2 class="text-center mt-5">Skills</h2>
-                        <p class="lead"><i class="fa-brands fa-js fa-bounce"></i> <i
-                                class="fa-brands fa-git fa-bounce"></i> <i class="fa-brands fa-bootstrap fa-bounce"></i>
-                            <i class="fa-brands fa-php fa-bounce"></i> <i class="fa-brands fa-python fa-bounce"></i> <i
-                                class="fa-solid fa-database fa-bounce"></i> <i class="fa-brands fa-html5 fa-bounce"></i>
+                        <h2 class="mt-3">Skills</h2>
+                        <p class="lead">
+                            <i class="fa-brands fa-js fa-bounce"></i>
+                            <i class="fa-brands fa-git fa-bounce"></i>
+                            <i class="fa-brands fa-bootstrap fa-bounce"></i>
+                            <i class="fa-brands fa-php fa-bounce"></i>
+                            <i class="fa-brands fa-python fa-bounce"></i>
+                            <i class="fa-solid fa-database fa-bounce"></i>
+                            <i class="fa-brands fa-html5 fa-bounce"></i>
                         </p>
                         <p class="lead">Web Development, Database Management, Problem-Solving.</p>
+                    </div>
+                </div>
             </section>
-        </div>
 
-
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 lead" id="projects">
-                <section class="mt-3 text-center">
-                    <h2>Projects</h2>
-                    <p class="lead pro">My Portfolio</p>
-                    <p class="lead pro">Secure file sharing system</p>
-                </section>
+            <!-- Projects-->
+            <div class="row">
+                <div class="col-md-6 col-sm-12 lead">
+                    <section class="mt-3 text-center" id="projects">
+                        <h2>Projects</h2>
+                        <p class="lead pro">My Portfolio</p>
+                        <p class="lead pro">Secure File Sharing System</p>
+                    </section>
+                </div>
+                <!-- contact details -->
+                <div class="col-md-6 col-sm-12 text-center" id="contact">
+                    <section class="mt-3 text-center">
+                        <h2 class="text-dark">Contact</h2>
+                        <a href="mailto:chiunzelangton@gmail.com" class="con"><i class="fa-solid fa-envelope"></i>
+                            E-Mail</a>
+                        <a href="tel:+264789779071" class="con"><i class="fa-solid fa-square-phone"></i>
+                            Call</a>
+                    </section>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12" id="contact">
-                <section class="mt-3 text-lead text-center">
-                    <h2 class="text-dark">Contact</h2>
-
-                    <a href="mailto:chiunzelangton@gmail.com"><i class="fa-solid fa-envelope"></i>E-Mail</a>
-                    <a href="tel:+264789779071"><i class="fa-solid fa-square-phone mt-3"></i>Call</a>
-
-                </section>
-            </div>
-            <!-- <div class="col-md-6 col-sm-12 text-center">
-                        <h2>Address</h2>
-                        <address class="text-lead">
-                            5731 Unit J<br />
-                            Chitungwiza<br />
-                        </address>
-                    </div> -->
-        </div>
         </div>
     </main>
+
+    <!-- footer for my social meadia links and copyright -->
     <footer class="bg-success text-white mt-5">
         <div class="container-fluid p-3">
             <div class="row">
-                <div class="col text-center d-flex justify-content-center gap-3">
-                    <p>&copy; 2025 Langton Chiunze</p>
-                    <p>All rights reserved.</p>
+                <div class="col text-center d-flex flex-column flex-md-row justify-content-center gap-3">
+                    <p class="mb-0">&copy; 2025 Langton Chiunze</p>
+                    <p class="mb-0">All rights reserved.</p>
                 </div>
-                <!-- my social media account links -->
                 <div class="col text-center d-flex justify-content-center gap-3">
-
-                    <a href="https://www.facebook.com/langton.chiunze" class="text-white">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/langton-chiunze-5bb3b5241" class="text-white">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/mr__chiunze/" class="text-white">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://x.com/chiunzelangton" class="text-white">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="https://github.com/sokowafawanaka" class="text-white">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
+                    <a href="https://www.facebook.com/langton.chiunze" class="text-white" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/langton-chiunze-5bb3b5241" class="text-white"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/mr__chiunze/" class="text-white" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/chiunzelangton" class="text-white" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/sokowafawanaka" class="text-white"><i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- A debug a day keeps the bugs away! -->
+    
+
     <script src="bootstrap.js"></script>
-<!-- A debug a day keeps the bugs away -->
-    <!-- coding is art -->
 </body>
 
 </html>
