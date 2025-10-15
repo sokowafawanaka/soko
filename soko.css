@@ -58,13 +58,13 @@
       max-width: 300px;
     }
     .navbar .collapse .navbar-nav .nav-link:hover {
-      background-color: #212529;
+      background-color:dark-gray;
       transition: 0.5s;
       color: white !important;
     }
     .navbar .collapse .navbar-nav .nav-link:active{
         background-color: white;
-        color: #212529!important;
+        color:dark-gray!important;
     }
     
     @media (max-width: 767.98px) {
@@ -93,5 +93,6 @@
    
 
   
+
 
 
