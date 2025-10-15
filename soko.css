@@ -7,15 +7,7 @@
       padding: 0;
       overflow-x: hidden;
     }
-    img {
-      border-radius:25px;
-      border: 2px solid white;
-      height:120px;
-      width:120px;
-      object-fit:cover;
-      
-        
-    }
+   
     ul {
       list-style-type: none;
     }
@@ -98,6 +90,7 @@
    
 
   
+
 
 
 
